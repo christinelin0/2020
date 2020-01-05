@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="js/myJS.js"></script>
+</head>
+
+<body onLoad="window.setTimeout('getSecs()',1)">
+    <fieldset>
+        <legend>我的購物車</legend>
+        <input type="button" class="btn5" value="顯示購買的商品" onClick="start()">
+        <br>
+        vegetable:
+        <input type="text" id="itm1">個<input type="text" id="mon1">元<br>
+        <br>
+        mix:
+        <input type="text" id="itm2">個<input type="text" id="mon2">元<br>
+        <br>
+        cold:
+        <input type="text" id="itm3">個<input type="text" id="mon3">元<br>
+        <br>
+        life:
+        <input type="text" id="itm4">個<input type="text" id="mon4">元<br>
+        <br>
+        fruit:
+        <input type="text" id="itm5">個<input type="text" id="mon5">元<br>
+        <br>
+        meat:
+        <input type="text" id="itm6">個<input type="text" id="mon6">元<br>
+        <br><br>
+        <p>##注意:請及早下單，否則優惠將被取消。</p>
+        <span id="Check_Txt" style="color:red">時間計數：<span id="Check_i">0小時0分0秒</span></span>
+    </fieldset><br>
+    <div>
+        <legend>結帳區</legend>
+        total:<input type="text" class="text" id="tot">元<br>
+        <input type="button" class="btn5" id="btn" value="結帳" onClick="btn()">
+    </div>
+</body>
+
+</html>
